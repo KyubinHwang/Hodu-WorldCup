@@ -1,0 +1,38 @@
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.winnerhodu {
+    max-width: 20%;
+}
+.kinghodu {
+    width: 40%;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.kinghodu:hover {
+    transform: scale(1.2);
+}
+.vsImg {
+    flex: 1;
+    overflow: hidden;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.basic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.page {
+    flex-wrap: wrap;
+    height: 100vh;
+}

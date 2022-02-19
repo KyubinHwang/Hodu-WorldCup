@@ -1,4 +1,35 @@
+.button {
+  justify-content: center;
+}
+.selection {
+  width: 20%;;
+}
+.action {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
 .kinghodu {
-    position: relative;
-    width: 30%;
-  }
+  text-align: center;
+  max-width: 20%;
+}
+.introduce {
+  
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+}
+.basic {
+  text-align: center;
+}
+.page {
+  flex-wrap: wrap;
+  height: 100vh;
+}

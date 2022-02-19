@@ -18,19 +18,23 @@ function StartPage(){
 
     return(
         <div>
-            <h1>호두 이상형 월드컵</h1>
-            <img className={styles.kinghodu} src={kingHodu} title="주인이 뽑은 킹-호두"/>
-            <div>
-                <h4>
+            <h1 className={styles.title}>호두 이상형 월드컵</h1>
+            <div className={styles.basic}>
+                <img className={styles.kinghodu} src={kingHodu} title="주인이 뽑은 킹-호두"/>
+                <h4 className={styles.introduce}>
                     너무 귀여운 호두의 사진들 중 당신의 단연 최고의 호두의 사진은 무엇인가요??!!<br/>
                     무려 32장의 귀여운 호두들 중 대결을 통해 1등을 차지할 호두는 어떤 호두일지...<br/>
-                    1등 호두를 위해서 고민해서 선택해주세요!!!<br/>
+                    1등 호두를 위해 고민해서 선택해주세요!!!<br/>
                 </h4>
             </div>
-            <Select options={options} defaultValue={options[0]} />
-            <Link to="vs">
-                <button>시작하기</button>
-            </Link>
+            <div className={styles.action}>
+                <Select className={styles.selection} options={options} defaultValue={options[0]} />
+            </div>
+            <div className={styles.action}>
+                <Link to="vs">
+                    <button className={styles.button}>시작하기</button>
+                </Link>
+            </div>
         </div>
     );
 }
