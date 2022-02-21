@@ -1,8 +1,15 @@
 .action {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.comment {
+    padding-top: 50px;
+    text-align: center;
+    position: relative;
 }
 .winnerhodu {
     max-width: 20%;
@@ -19,6 +26,7 @@
 .vsImg {
     flex: 1;
     overflow: hidden;
+    padding-bottom: 30px;
 }
 .title {
     display: flex;
@@ -32,7 +40,19 @@
     align-items: center;
     text-align: center;
 }
+.card {
+    background-color: gainsboro;
+    border-radius: 30px;
+    width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
 .page {
     flex-wrap: wrap;
     height: 100vh;
-}
+    background-color: beige;
+  }

@@ -5,6 +5,38 @@ import { Link } from 'react-router-dom';
 
 const items = [
     {
+        name : "지긋이 보는 호두",
+        src : require("./img/2AA50071-FAC8-477E-BA3C-D7E76EEC6755.JPG")
+    },
+    {
+        name : "차에 안겨 있는 호두",
+        src : require("./img/9C259C3D-D5BA-4F41-93A4-D2925A3C3E0B.JPG")
+    },
+    {
+        name : "이성을 잃은 호두",
+        src : require("./img/71F5E2E5-5346-43CF-9928-574B51404C48.JPG")
+    },
+    {
+        name : "혀 내밀은 호두",
+        src : require("./img/86C73AEE-D901-403A-9239-D06428722CA3.JPG")
+    },
+    {
+        name : "황당한 호두",
+        src : require("./img/BE610F99-9828-4944-A114-EC964D5796D0.JPG")
+    },
+    {
+        name : "물끄럼 호두",
+        src : require("./img/C284BFB4-1213-4B0B-9C07-1D04CDCC2698.JPG")
+    },
+    {
+        name : "푸근한 호두",
+        src : require("./img/C918CEA5-FB43-4D59-BAB0-7612520E5BF0.JPG")
+    },
+    {
+        name : "졸린 패딩 호두",
+        src : require("./img/DC517D5B-2A7D-4A4F-A32F-BA0E6E11E799.JPG")
+    },
+    {
         name : "호두마루 호두",
         src : require("./img/DE751A3F-431F-49A0-BD78-0023803748AD.JPG")
     },
@@ -38,12 +70,12 @@ const items = [
     },
 ];
 
-function VsPage(){
+function VsPage16(){
     const [hodus, setHodu] = useState([]);
     const [displays, setDisplays] = useState([]);
     const [winnerhodu, setWinners] = useState([]);
     const [roundCount, setRound] = useState(1);
-    const [totalRound, setTotal] = useState(4);
+    const [totalRound, setTotal] = useState(8);
     const [winnerdisplay, setWinnerDisplay] = useState(false);
 
     useEffect(() => {
@@ -123,4 +155,4 @@ function VsPage(){
     );
 }
 
-export default VsPage;
+export default VsPage16;
