@@ -10,10 +10,10 @@ function App() {
   return (
     <div className={styles.skin}>
       <Routes>
-        <Route path="/" element={<StartPage/>} />
-        <Route path="/vs8" element={<VsPage/>} />
-        <Route path="/vs16" element={<VsPage16/>} />
-        <Route path="/vs32" element={<VsPage32/>} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<StartPage/>} />
+        <Route path={`${process.env.PUBLIC_URL}/vs8`} element={<VsPage/>} />
+        <Route path={`${process.env.PUBLIC_URL}/vs16`} element={<VsPage16/>} />
+        <Route path={`${process.env.PUBLIC_URL}/vs32`} element={<VsPage32/>} />
       </Routes>
     </div>
   );
