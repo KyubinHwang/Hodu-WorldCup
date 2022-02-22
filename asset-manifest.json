@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hodu-worldcup/static/css/main.12656647.css",
-    "main.js": "/hodu-worldcup/static/js/main.5b843a14.js",
+    "main.js": "/hodu-worldcup/static/js/main.a188f30c.js",
     "static/media/IMG_1862.jpg": "/hodu-worldcup/static/media/IMG_1862.1fb18761e8a5574cae02.jpg",
     "static/media/IMG_2562.jpg": "/hodu-worldcup/static/media/IMG_2562.03d233cbbf004261fc9d.jpg",
     "static/media/IMG_1401.jpg": "/hodu-worldcup/static/media/IMG_1401.354a2d1ef4fb27238cd0.jpg",
@@ -36,10 +36,10 @@
     "static/media/71F5E2E5-5346-43CF-9928-574B51404C48.JPG": "/hodu-worldcup/static/media/71F5E2E5-5346-43CF-9928-574B51404C48.7e0448249e07ba9e95fb.JPG",
     "index.html": "/hodu-worldcup/index.html",
     "main.12656647.css.map": "/hodu-worldcup/static/css/main.12656647.css.map",
-    "main.5b843a14.js.map": "/hodu-worldcup/static/js/main.5b843a14.js.map"
+    "main.a188f30c.js.map": "/hodu-worldcup/static/js/main.a188f30c.js.map"
   },
   "entrypoints": [
     "static/css/main.12656647.css",
-    "static/js/main.5b843a14.js"
+    "static/js/main.a188f30c.js"
   ]
 }
