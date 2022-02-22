@@ -4,7 +4,6 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-// import Select from "react-select";
 import { useState, useEffect, useMemo } from "react";
 import { Link } from 'react-router-dom';
 import kingHodu from './img/IMG_2291.jpg';

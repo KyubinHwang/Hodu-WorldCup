@@ -2,6 +2,14 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import styles from "./vspage.module.css";
 import { Link } from 'react-router-dom';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import { AiOutlineLink } from "react-icons/ai";
+import { RiKakaoTalkLine } from "react-icons/ri";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { flexbox } from '@mui/system';
 
 const items = [
     {
@@ -38,6 +46,18 @@ const items = [
     },
 ];
 
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 4,
+    borderRadius : 5,
+};
+
 function VsPage(){
     const [hodus, setHodu] = useState([]);
     const [displays, setDisplays] = useState([]);
@@ -45,6 +65,7 @@ function VsPage(){
     const [roundCount, setRound] = useState(1);
     const [totalRound, setTotal] = useState(4);
     const [winnerdisplay, setWinnerDisplay] = useState(false);
+    const currentUrl = window.location.href;
 
     useEffect(() => {
         items.sort(() => Math.random() - 0.5);
@@ -73,6 +94,16 @@ function VsPage(){
             setRound(roundCount + 1);
         }
     }
+
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    const handleKakaoButton = () => {
+        window.Kakao.Link.sendScrap({
+            requestUrl: currentUrl, 
+    })};
+
     return(
         <div className={styles.page}>
             <div className={styles.card}>
@@ -89,10 +120,34 @@ function VsPage(){
                             <label>{displays[0].name}</label>
                         </div>
                         <div className={styles.action}>
-                            <Link to="/">
-                                <button>다시하기</button>
+                            <Link to="/" style={{ textDecoration: 'none' }}>
+                                <Button>다시하기</Button>
                             </Link>
-                            <button>공유하기</button>
+                            <Button onClick={handleOpen}>공유하기</Button>
+                            <Modal
+                                open={open}
+                                onClose={handleClose}
+                                aria-labelledby="modal-modal-title"
+                                aria-describedby="modal-modal-description"
+                            >
+                                <Box sx={style}>
+                                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                                        공유하기
+                                    </Typography>
+                                    <CopyToClipboard text={currentUrl}>
+                                        <Button id="modal-modal-description" sx={{ mt: 2 }}>
+                                            <AiOutlineLink/>
+                                            &nbsp;링크 복사하기
+                                        </Button>
+                                    </CopyToClipboard>
+                                    <br/>
+                                    <Button id="modal-modal-description" sx={{ mt: 2 }} onClick={handleKakaoButton}>
+                                        <RiKakaoTalkLine/>
+                                        &nbsp;카카오톡 공유하기
+                                    </Button>
+                                </Box>
+                            </Modal>
+                            
                         </div>
                     </div>
                 ) : (
