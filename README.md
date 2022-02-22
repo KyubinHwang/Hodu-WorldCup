@@ -22,6 +22,7 @@
 <img width="1424" alt="스크린샷 2022-02-22 오전 10 19 13" src="https://user-images.githubusercontent.com/70309113/155045918-8851133b-a8ef-4ab6-8500-50a1ef8a144e.png">
 <img width="1424" alt="스크린샷 2022-02-22 오전 10 19 21" src="https://user-images.githubusercontent.com/70309113/155045985-84594861-4997-44c2-9c67-100b65b1f338.png">
 <img width="1424" alt="스크린샷 2022-02-22 오전 10 19 29" src="https://user-images.githubusercontent.com/70309113/155045993-06e4c96f-9416-4abc-9ac9-307d27ba3e43.png">
+<img width="1432" alt="스크린샷 2022-02-22 오후 10 47 18" src="https://user-images.githubusercontent.com/70309113/155145341-7304bb33-5824-4a8d-83ef-e2edeba6580c.png">
 
 ### 🔥 보완해야할 점
 - 핸드폰 화면에서 실행시 사이즈가 달라질 수 있는 것을 고려하여 세로크기에서의 화면 렌더링 고민
