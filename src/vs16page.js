@@ -90,19 +90,21 @@ const style = {
   };
 
 function VsPage16(){
-    const [hodus, setHodu] = useState([]);
-    const [displays, setDisplays] = useState([]);
-    const [winnerhodu, setWinners] = useState([]);
-    const [roundCount, setRound] = useState(1);
-    const [totalRound, setTotal] = useState(8);
-    const [winnerdisplay, setWinnerDisplay] = useState(false);
+    
     const currentUrl = window.location.href;
+    const [hodus, setHodu] = useState([]);
 
     useEffect(() => {
         items.sort(() => Math.random() - 0.5);
         setHodu(items);
         setDisplays([items[0], items[1]]);
     }, []);
+
+    const [displays, setDisplays] = useState([]);
+    const [winnerdisplay, setWinnerDisplay] = useState(false);
+    const [winnerhodu, setWinners] = useState([]);
+    const [roundCount, setRound] = useState(1);
+    const [totalRound, setTotal] = useState(8);
 
     const clickEvent = hodu => () => {
         if (hodus.length <= 2) {

@@ -16,7 +16,7 @@ function App() {
 			// 중복 initialization 방지
 			if (!window.Kakao.isInitialized()) {
 				// 두번째 step 에서 가져온 javascript key 를 이용하여 initialize
-				window.Kakao.init("발급받은 javascript key");
+				window.Kakao.init("185c4134df1cd7fb447ca3ee820e1b97");
 			}
 		}
 	}, [status]);	
